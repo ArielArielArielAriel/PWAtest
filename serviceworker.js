@@ -1,10 +1,9 @@
 (function () {
     'use strict';
-
     // Update 'version' if you need to refresh the cache
     var version = 'v1.0::CacheFirstSafe';
-    var offlineUrl = "/offline.html"; // <-- Offline/Index.cshtml
-    var urlsToCache = [ '/', offlineUrl, '/index.html' ]; // <-- Add more URLs you would like to cache.
+    var offlineUrl = "PWAtest/offline.html"; // <-- Offline/Index.cshtml
+    var urlsToCache = [ 'PWAtest/', offlineUrl, 'PWAtest/index.html' ]; // <-- Add more URLs you would like to cache.
 
     // Store core files in a cache (including a page to display when offline)
     function updateStaticCache() {
