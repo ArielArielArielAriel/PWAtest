@@ -54,6 +54,10 @@
 
     self.addEventListener('fetch', function (event) {
         var request = event.request;
+        if(!(event.request.url.indexOf('http') === 0)){
+            return;
+         }
+
 
         // Always fetch non-GET requests from the network
         if (request.method !== 'GET' || request.url.match(/\/browserLink/ig)) {
